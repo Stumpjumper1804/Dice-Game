@@ -50,7 +50,12 @@
     font-size: 1.5rem;
 }
 
-#result1, #result2, h2 {
+#result1, #result2 {
+    color: deeppink;
+    font-size: 3rem;
+}
+
+h2 {
     color: deeppink;
 }
 
