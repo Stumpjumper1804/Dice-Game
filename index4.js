@@ -34,4 +34,12 @@ document.getElementById("submit").addEventListener("click", () => {
 
 /////////////////////////////////////////////////////////////////////////////////
 
-//Basic Ex2
+//Inter Ex 1
+
+const items = document.querySelectorAll("img");
+
+items.forEach((element) => {
+  element.addEventListener("click", function () {
+    this.remove();
+  });
+});
