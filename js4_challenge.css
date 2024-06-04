@@ -1,0 +1,47 @@
+#container-wrap {
+    border: 2px solid yellow;
+    width: 1000px;
+    margin: 20px auto;
+}
+
+#container-header {
+    border: 2px solid black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 30vh;
+}
+
+#container-main {
+    border: 2px solid blue;
+    width: 100%;
+    display: flex;
+}
+
+#container-p1, #container-p2 {
+    border: 2px solid red;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50vh;
+}
+
+#container-span {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid green;
+    /* gap: 50vw; */
+    width: 100%;
+}
+
+#player1, #player2 {
+    border: 1px solid black;
+    width: 50%;
+    text-align: center;
+    ;
+}
