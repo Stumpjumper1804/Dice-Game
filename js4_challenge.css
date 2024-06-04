@@ -2,6 +2,9 @@
     border: 2px solid yellow;
     width: 1000px;
     margin: 20px auto;
+    background-image: url("./images/cube-1655118_1920.jpg");
+    /* background-size: contain; */
+    /* opacity: 0.5; */
 }
 
 #container-header {
@@ -43,5 +46,19 @@
     border: 1px solid black;
     width: 50%;
     text-align: center;
-    ;
+    color: chartreuse;
+    font-size: 1.5rem;
+}
+
+#result1, #result2, h2 {
+    color: deeppink;
+}
+
+#versus {
+    color: chartreuse;
+    font-size: 1.2rem;
+}
+
+h1 {
+    color: white;
 }
