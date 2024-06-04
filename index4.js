@@ -62,3 +62,37 @@ function changeBackground() {
 
   div.style.backgroundColor = color;
 }
+
+//////////////////////////////////////////////////////////////////////////7///
+
+//Advanced Exercise 1 | Mouse Event Handling
+
+const circle = document.getElementById("circle");
+const message = document.getElementById("text-below");
+
+// ● Hover: Display a message below the circle that reads "You are in the
+// circle" when the mouse is over it.
+circle.addEventListener("mouseover", (event) => {
+  message.style.marginLeft = `500px`;
+});
+
+circle.addEventListener("mouseout", (event) => {
+  message.style.marginLeft = `-500px`;
+  circle.style.backgroundColor = "rgb(255,255,255)";
+});
+// ● Mouse Leave: Show a message that says "You are outside of the
+// circle" when the mouse leaves the circle
+circle.addEventListener("mouseout", (event) => {
+  message.style.marginLeft = `-500px`;
+  // alert("You are outside the circle.");
+});
+// ● Click: Change the webpage's background color to gray upon a single
+// mouse click on the circle.
+circle.addEventListener("click", (event) => {
+  circle.style.backgroundColor = "lightgrey";
+});
+// ● Double-Click: Change the webpage's background color to blue when
+// you double-click on the circle.
+circle.addEventListener("dblclick", (event) => {
+  circle.style.backgroundColor = "blue";
+});
