@@ -36,11 +36,19 @@ document.getElementById("submit").addEventListener("click", () => {
 
 //Inter Ex 1
 
-const items = document.querySelectorAll("img");
+//Only remove
+//const items = document.querySelectorAll("img");
+// items.forEach((element) => {
+//   element.addEventListener("click", function () {
+//     this.remove();
+//   });
+// });
 
+//remove and add
+const items = document.querySelectorAll("img");
 items.forEach((element) => {
   element.addEventListener("click", function () {
-    this.remove();
+    element.classList.toggle("hidden");
   });
 });
 
@@ -76,15 +84,11 @@ circle.addEventListener("mouseover", (event) => {
   message.style.marginLeft = `500px`;
 });
 
-circle.addEventListener("mouseout", (event) => {
-  message.style.marginLeft = `-500px`;
-  circle.style.backgroundColor = "rgb(255,255,255)";
-});
 // ● Mouse Leave: Show a message that says "You are outside of the
 // circle" when the mouse leaves the circle
 circle.addEventListener("mouseout", (event) => {
   message.style.marginLeft = `-500px`;
-  // alert("You are outside the circle.");
+  circle.style.backgroundColor = "rgb(255,255,255)";
 });
 // ● Click: Change the webpage's background color to gray upon a single
 // mouse click on the circle.

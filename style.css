@@ -20,6 +20,7 @@
 
 img {
    width: 100%;
+   visibility: visible;
 }
 
 #color-change {
@@ -47,4 +48,8 @@ img {
    align-content: center;
    margin-left: -300px;
    
+}
+
+.hidden {
+   opacity: 0;
 }
