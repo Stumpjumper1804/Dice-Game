@@ -43,3 +43,22 @@ items.forEach((element) => {
     this.remove();
   });
 });
+
+/////////////////////////////////////////////////////////////////////////////77
+
+//Inter Ex 2
+
+const div = document.getElementById("color-change");
+div.addEventListener("click", changeBackground);
+
+function changeBackground() {
+  let r = Math.floor(Math.random() * 256);
+  let g = Math.floor(Math.random() * 256);
+  let b = Math.floor(Math.random() * 256);
+
+  let color = `rgb(${r},${g},${b})`;
+
+  console.log(r, g, b);
+
+  div.style.backgroundColor = color;
+}
