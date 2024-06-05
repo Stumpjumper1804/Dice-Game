@@ -32,21 +32,30 @@ function rollDiceP2() {
 }
 
 //compare both results and declare a winner
-// if (
-//   document.getElementById("result1").value != "" &&
-//   document.getElementById("result2").value != ""
-// ) {
-//   if (
-//     document.getElementById("result1").value >
-//     document.getElementById("result2").value
-//   ) {
-//     alert("Player 1 has won!");
-//   } else if (
-//     document.getElementById("result1").value <
-//     document.getElementById("result2").value
-//   ) {
-//     alert("Player 2 has won!");
-//   } else {
-//     alert("There is no winner.");
-//   }
-// }
+
+const btnResult = document.getElementById("final-result");
+btnResult.addEventListener("click", getResult);
+
+function getResult() {
+  console.log(document.getElementById("result1").textContent);
+  console.log(document.getElementById("result2").textContent);
+
+  if (
+    document.getElementById("result1").textContent != "" &&
+    document.getElementById("result2").textContent != ""
+  ) {
+    if (
+      document.getElementById("result1").textContent >
+      document.getElementById("result2").textContent
+    ) {
+      alert("Player 1 has won!");
+    } else if (
+      document.getElementById("result1").textContent <
+      document.getElementById("result2").textContent
+    ) {
+      alert("Player 2 has won!");
+    } else {
+      alert("There is no winner.");
+    }
+  }
+}
