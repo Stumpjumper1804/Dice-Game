@@ -48,14 +48,17 @@ function getResult() {
       document.getElementById("result1").textContent >
       document.getElementById("result2").textContent
     ) {
-      alert("Player 1 has won!");
+      // alert("Player 1 has won!");
+      Swal.fire("Player 1 has won!");
     } else if (
       document.getElementById("result1").textContent <
       document.getElementById("result2").textContent
     ) {
-      alert("Player 2 has won!");
+      // alert("Player 2 has won!");
+      Swal.fire("Player 2 has won!");
     } else {
-      alert("There is no winner.");
+      // alert("There is no winner.");
+      Swal.fire("There is no winner.");
     }
   }
 }
