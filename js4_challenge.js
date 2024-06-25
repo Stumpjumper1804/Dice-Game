@@ -1,9 +1,12 @@
 //Start the game by adding the players
 const btnStart = document.getElementById("startGame");
 
+let player1 = "";
+let player2 = "";
+
 btnStart.addEventListener("click", () => {
-  let player1 = prompt("Enter player 1", "Player 1");
-  let player2 = prompt("Enter player 1", "Player 2");
+  player1 = prompt("Enter player 1", "Player 1");
+  player2 = prompt("Enter player 1", "Player 2");
 
   document.getElementById("player1").innerText = player1;
   document.getElementById("player2").innerText = player2;
@@ -49,13 +52,13 @@ function getResult() {
       document.getElementById("result2").textContent
     ) {
       // alert("Player 1 has won!");
-      Swal.fire("Player 1 has won!");
+      Swal.fire(`${player1} has won!`);
     } else if (
       document.getElementById("result1").textContent <
       document.getElementById("result2").textContent
     ) {
       // alert("Player 2 has won!");
-      Swal.fire("Player 2 has won!");
+      Swal.fire(`${player2} has won!`);
     } else {
       // alert("There is no winner.");
       Swal.fire("There is no winner.");
