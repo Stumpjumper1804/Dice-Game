@@ -64,4 +64,7 @@ function getResult() {
       Swal.fire("There is no winner.");
     }
   }
+  //clear results
+  document.getElementById("result1").innerText = "";
+  document.getElementById("result2").innerText = "";
 }
